@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParentSignup1Activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.09">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Enter Your Details"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textSize="25dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:orientation="vertical"
+            android:paddingTop="30dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/parentphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@drawable/ic_local_phone_accent_24dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="phone"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@id/parentaddress"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/parentaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@drawable/ic_home_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@id/childname"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/childname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Child's Name"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@drawable/ic_person_accent_24dp"
+                        android:drawablePadding="10dp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@id/childage"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/childage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Child's Age"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@drawable/ic_favorite_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="phone"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@id/childschool"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/childschool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Child's School"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@drawable/ic_home_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:nextFocusDown="@id/childschoolphone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/childschoolphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Child's School Phone Number"
+                        android:padding="12dp"
+                        android:background="@drawable/edit_text_background"
+                        android:drawableLeft="@drawable/ic_local_phone_accent_24dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="number"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="14dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColor="#fff"
+                    android:text="Signup"
+                    android:background="@drawable/roundbtnaccent"
+                    android:textSize="19dp"
+                    android:layout_weight="1"
+                    android:id="@+id/parentSignup"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:drawableStart="@drawable/ic_person_add_white_24dp"
+                    android:paddingLeft="20dp"
+                    android:drawablePadding="-30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
